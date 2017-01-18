@@ -22,19 +22,11 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.parse.FindCallback;
-import com.parse.GetCallback;
 import com.parse.LogInCallback;
-import com.parse.Parse;
 import com.parse.ParseAnalytics;
 import com.parse.ParseException;
-import com.parse.ParseObject;
-import com.parse.ParseQuery;
 import com.parse.ParseUser;
-import com.parse.SaveCallback;
 import com.parse.SignUpCallback;
-
-import java.util.List;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, View.OnKeyListener {
@@ -50,6 +42,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent intent = new Intent(getApplicationContext(), UserListActivity.class);
         startActivity(intent);
 
+    }
+
+    public void showStreamFeed() {
+
+        Intent intent = new Intent(getApplicationContext(), StreamFeedActivity.class);
+        startActivity(intent);
     }
 
     @Override
@@ -121,7 +119,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                             Log.i("Signup", "Successful");
 
-                            showUserList();
+                            showStreamFeed();
 
                         } else {
 
@@ -141,7 +139,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                             Log.i("Signup", "Login successful");
 
-                            showUserList();
+                            showStreamFeed();
 
                         } else {
 
@@ -185,7 +183,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
       if (ParseUser.getCurrentUser() != null) {
 
-          showUserList();
+          showStreamFeed();
 
       }
 

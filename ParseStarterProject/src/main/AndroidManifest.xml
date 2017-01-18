@@ -36,7 +36,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".UserListActivity" />
-        <activity android:name=".UserFeedActivity"></activity>
+        <activity android:name=".UserFeedActivity" />
+        <activity android:name=".StreamFeedActivity"></activity>
     </application>
 
 </manifest>
