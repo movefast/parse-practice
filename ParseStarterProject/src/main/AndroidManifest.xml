@@ -10,9 +10,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.parse.starter">
 
+    <uses-sdk
+        android:minSdkVersion="16"
+        tools:overrideLibrary="com.longtailvideo.jwplayer,com.longtailvideo.jwplayer.common" />
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
         android:name=".StarterApplication"
@@ -40,11 +47,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".UserListActivity" />
-        <activity android:name=".UserFeedActivity"
+        <activity
+            android:name=".UserFeedActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
-        <activity android:name=".StreamFeedActivity"></activity>
+        <activity android:name=".StreamFeedActivity" />
+        <activity android:name=".VideoActivity"></activity>
     </application>
-    <uses-sdk android:minSdkVersion="16"
-        tools:overrideLibrary="com.longtailvideo.jwplayer,com.longtailvideo.jwplayer.common" />
 
 </manifest>

@@ -11,24 +11,11 @@
     tools:context="com.parse.starter.UserFeedActivity"
     android:padding="0dp">
 
-    <!--<LinearLayout-->
-        <!--android:orientation="vertical"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:layout_centerHorizontal="true"-->
-        <!--android:layout_alignParentTop="true"-->
-        <!--android:id="@+id/linearLayout"></LinearLayout>-->
-    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <fragment
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:name="com.longtailvideo.jwplayer.JWPlayerFragment"
-            android:id="@+id/playerFragment"
-            tools:layout="@layout/jw_player_fragment_sample_layout"/>
-
-    </FrameLayout>
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/linearLayout"></LinearLayout>
 </RelativeLayout>
