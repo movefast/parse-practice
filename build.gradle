@@ -11,13 +11,17 @@ buildscript {
 allprojects {
     repositories {
         mavenCentral()
+        maven {
+            url 'https://mvn.jwplayer.com/content/repositories/releases/'
+        }
     }
+
 }
 
 ext {
     compileSdkVersion = 22
     buildToolsVersion = "23.0.1"
 
-    minSdkVersion = 9
+    minSdkVersion = 16
     targetSdkVersion = 23
 }
